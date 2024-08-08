@@ -1,16 +1,18 @@
 html {
-    font-family: system-ui, sans-serif;
+    font-family: system-ui, Verdana, Geneva, sans-serif;
     scroll-behavior: smooth;
-}
-
-body {
-    background-color: black;
+    scrollbar-gutter: stable;
 }
 
 body {
     animation: fadeInAnimation ease 0.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
 }
 
 @keyframes fadeInAnimation {
@@ -49,35 +51,42 @@ body {
 }
 
 ::-webkit-scrollbar { 
-    width: 7px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
     background: #221b35;
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #2f5d84;
-    border-radius: 15px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+::-webkit-scrollbar-corner { 
+    background: #221b35;
 }
 
 .landingWrapper {
-    background-image: url(assets/cover.png);
-    background-size: cover !important;
+    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover1.png);
+    background-size: cover;
     background-position: center; 
-    height: auto;
-    min-height: 100%;
+    height: 100vh;
     width: auto;
-    padding: 2% 3% 3.5%; 
+    padding: 2% 3% 2%; 
     background-repeat: no-repeat;
     
     animation: zoomInAnimation cubic-bezier(0,1.07,.64,.97) 600ms;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 	
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+
+    overflow: hidden;
 }
 
 .navBar {
@@ -112,11 +121,11 @@ body {
 
 .header1 {
     color: white;
-    font-size: 500%;
+    font-size: 12vh;
     font-family: NeueMachina;
     padding: 0 30px;
     margin: 0;
-    margin-top: 5.8%;
+    margin-top: 16vh;
 
     line-height: 100%;
     user-select: none;
@@ -125,7 +134,7 @@ body {
 .header4 {
     color: white;
     font-family: Raleway;
-    font-size: 150%;
+    font-size: 3vh;
     padding: 0 33px;
     margin-top: 20px;
 
@@ -137,13 +146,13 @@ body {
     font-weight: bold;
     border: 0;
     background-color: #0073FF;
-    font-size: 22.5px;
+    font-size: 2.2vh;
     color: white;
     margin-top: 3%;
-    padding: 20px 50px;
+    padding: 2.5vh 2.5vw;
     cursor: pointer;
     transition-duration: 300ms;
-    border-radius: 20px;
+    border-radius: 2vh;
 }
 
 .directButton:hover {
