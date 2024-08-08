@@ -1,0 +1,169 @@
+html {
+    font-family: system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+body {
+    animation: fadeInAnimation ease 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomInAnimation {
+    0% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url(fonts/NeueMachina-Regular.otf);
+}
+
+@font-face {
+    font-family: NeueMachina;
+    font-weight: bolder;
+    src: url(fonts/NeueMachina-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: NeueMachina;
+    font-weight: lighter;
+    src: url(fonts/NeueMachina-Light.otf);
+}
+
+::-webkit-scrollbar { 
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #221b35;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2f5d84;
+    border-radius: 15px;
+}
+
+.landingWrapper {
+    background-image: url(assets/cover.png);
+    background-size: cover !important;
+    background-position: center; 
+    height: auto;
+    min-height: 100%;
+    width: auto;
+    padding: 2% 3% 3.5%; 
+    background-repeat: no-repeat;
+    
+    animation: zoomInAnimation cubic-bezier(0,1.07,.64,.97) 600ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.navText {
+    text-decoration: none;
+    color: white; 
+    font-size: 22px;
+    font-family: NeueMachina;
+    font-weight: 550;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.navText:hover {
+    color: #0073FF;
+    transition: ease;
+    transition-duration: 200ms;
+}
+
+.navButton {
+    margin: 0px 2.8%;
+    user-select: none;
+}
+
+.header1 {
+    color: white;
+    font-size: 500%;
+    font-family: NeueMachina;
+    padding: 0 30px;
+    margin: 0;
+    margin-top: 5.8%;
+
+    line-height: 100%;
+    user-select: none;
+}
+
+.header4 {
+    color: white;
+    font-family: Raleway;
+    font-size: 150%;
+    padding: 0 33px;
+    margin-top: 20px;
+
+    user-select: none;
+}
+
+.directButton {
+    font-family: Raleway;
+    font-weight: bold;
+    border: 0;
+    background-color: #0073FF;
+    font-size: 22.5px;
+    color: white;
+    margin-top: 3%;
+    padding: 20px 50px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    border-radius: 20px;
+}
+
+.directButton:hover {
+    background-color: white;
+    color: #0073FF;
+    transition: ease;
+    transition-duration: 300ms;
+    transform: translate(0, -6px);
+}
+
+.logo {
+    margin: 5px; margin-right: 98px;
+    user-select: none;
+}
+
+.section {
+    background-color: white;
+    padding: 75px;
+    font-family: Raleway, sans-serif;
+
+    overflow: hidden;
+    text-wrap: pretty;
+}
