@@ -71,7 +71,8 @@ body {
 }
 
 .landingWrapper {
-    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover.png);
+    /* background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover.png); */
+    background-color: grey;
     background-size: cover;
     background-position: center; 
     height: 100vh;
