@@ -1,6 +1,6 @@
 hello yes hi
 
-folder naming convention:
+folder naming:
 all folders must be camelcase, without spaces.
 e.g. assets, navigationLogos
 
