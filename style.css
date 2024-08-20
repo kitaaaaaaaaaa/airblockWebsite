@@ -119,6 +119,27 @@ body {
     user-select: none;
 }
 
+.text1 {
+    color: white;
+    font-family: Raleway;
+    font-size: 3.7em;
+    font-weight: bolder;
+}
+
+.highlight {
+    background-color: 59A5D8;
+    padding: 0 9px;
+    border-radius: 2px;
+    line-height: 145%;
+}
+
+.video {
+    background-color: grey;
+    height: 50vh;
+    width: 45vw;
+    margin-left: 7.5vw;
+}
+
 .header1 {
     color: white;
     font-size: 12vh;
@@ -169,10 +190,29 @@ body {
 }
 
 .section {
-    background-color: white;
+    color: white;
+    background-color: #133C55;
     padding: 75px;
     font-family: Raleway, sans-serif;
 
+    height: 80vh;
+
     overflow: hidden;
     text-wrap: pretty;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#splineContainer {
+    position: absolute; 
+    top: 0; 
+    left: 30%; 
+    width: 70%; 
+    height: 100vh; 
+    overflow: hidden; 
+    padding: 2% 0 2%;
 }
