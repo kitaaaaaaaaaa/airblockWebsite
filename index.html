@@ -1,41 +1,85 @@
 <html>
 <head>
+    <title>Makeblock Airblock</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <title>Makeblock Airblock</title>
     <link rel="icon" href="assets/favicon.png" sizes="16px 16px">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js"></script>
 </head>
 <body style="margin: 0; padding: 0;">
     <div class="landingWrapper">
-        <div class="navBar">
+        
+        <div class="nav_Bar">
             <a href="index.html"><img src="assets/logo.png" width="192" height="70" class="logo"></a>
-            <div class="navButton">
-                <a href="index.html" class="navText">Home</a>
+            <div class="nav_Button">
+                <a href="index.html" class="nav_Button_Text">Home</a>
             </div>
-            <div class="navButton">
-                <a href="about.html" class="navText">About</a>
+            <div class="nav_Button">
+                <a href="about.html" class="nav_Button_Text">About</a>
             </div>
-            <div class="navButton">
-                <a href="quickStart.html" class="navText">Quick start</a>
+            <div class="nav_Button">
+                <a href="quickStart.html" class="nav_Button_Text">Quick start</a>
             </div>
-            <div class="navButton">
-                <a href="coding.html" class="navText">Coding</a>
+            <div class="nav_Button">
+                <a href="coding.html" class="nav_Button_Text">Coding</a>
             </div>
         </div>
+
+
+
         <div class="header1">BUILD IT.<br>CODE IT.<br>FLY IT.</div>
         <div class="header4">woah cool text</div>
+
         <div style="padding: 0 33px;">
-            <a href="about.html" class="navText"><button class="directButton">Learn more</button></a>
+            <a href="about.html" class="nav_Button_Text"><button class="land_Button">Learn more</button></a>
         </div>
     </div>
+
+
+
     <div class="section">
-        <div class="text1">
-            The<br><span class="highlight">Modular & </span><br><span class="highlight">Programmable</span> <br> Starter Drone
+        <div class="header2" data-aos="fade-right">
+            The<br><span class="highlight highlight59A5D8 animate">Modular &</span><br><span class="highlight59A5D8 animate" id="highlight1">Programmable</span><br>Starter Drone
         </div>
-        <div>
-            <video src="assets/cover.png" class="video"></video>
+        <div data-aos="fade-left">
+            <video src="" class="video"></video>
         </div>
     </div>
+
+
+
+    <div class="section">
+        <div data-aos="fade-right">
+            <span class="header2 small highlight highlight386FA4 animate">
+                Easy to build
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa commodi natus, ab esse inventore, placeat asperiores nulla qui alias ducimus odit reiciendis delectus consectetur at suscipit doloremque vero corporis praesentium!</p>
+        </div>
+
+        <div data-aos="fade-left">
+            <img src="" class="image right">
+        </div>
+    </div>
+
+
+
+    <div class="section">
+        <div data-aos="fade-right">
+            <img src="" class="image left" data-aos="fade-right">
+        </div>
+
+        <div data-aos="fade-left">
+            <span class="header2 small highlight highlight386FA4 animate">
+                Hassle-free beginner drone
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa commodi natus, ab esse inventore, placeat asperiores nulla qui alias ducimus odit reiciendis delectus consectetur at suscipit doloremque vero corporis praesentium!</p>
+        </div>
+    </div>
+
+
+
     <div class="section">In the gentle waters of the tranquil pond, ducks paddle gracefully, their feathers glistening
         under the warm sun as they quack cheerfully, creating ripples that dance across the surface while the breeze whispers through 
         the reeds. Each morning, they gather together, forming a delightful parade of vibrant colors, from the bright yellow of the 
@@ -48,5 +92,19 @@
         against the vibrant backdrop a picturesque scene of nature's beauty. They share stories of the day’s adventures through a chorus 
         of quacks, their camaraderie evident as they settle down for the night, nestled together on a cozy patch of grass, dreaming of 
         the adventures that tomorrow will bring—a new day filled with exploration, friendship, and the simple joys of life by the water.</div>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            duration: 800,
+            delay: -50,
+            once: false,
+        });
+    </script>
 </body>
 </html>

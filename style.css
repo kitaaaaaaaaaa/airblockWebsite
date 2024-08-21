@@ -15,6 +15,227 @@ body {
     max-width: 100%;
 }
 
+
+.landingWrapper {
+    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    width: auto;
+    padding: 2% 3% 2%; 
+    
+    animation: zoomInAnimation cubic-bezier(0,1.07,.64,.97) 600ms;
+    animation-iteration-count: 1;
+	
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    overflow: hidden;
+    
+    box-shadow: 0 -300px 75px -200px #133C55 inset; /* Bottom Gradient */
+}
+
+.logo {
+    margin: 5px; 
+    margin-right: 98px;
+    user-select: none;
+}
+
+.nav_Bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.nav_Button {
+    margin: 0px 2.8%;
+    user-select: none;
+}
+
+.nav_Button_Text {
+    text-decoration: none;
+    color: white; 
+    font-size: 22px;
+    font-family: NeueMachina;
+    font-weight: 550;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.nav_Button_Text:hover {
+    color: #0073FF;
+    transition: ease;
+    transition-duration: 200ms;
+}
+
+.header1 {
+    color: white;
+    
+    font-family: NeueMachina;
+    font-size: 12vh;
+    line-height: 100%;
+    
+    padding: 0 30px;
+    margin: 0;
+    margin-top: 16vh;
+    
+    user-select: none;
+}
+
+.header4 {
+    color: white;
+    
+    font-family: Raleway;
+    font-size: 3vh;
+    
+    padding: 0 33px;
+    margin-top: 20px;
+    
+    user-select: none;
+}
+
+.land_Button {
+    color: white;
+    background-color: #0073FF;
+    border: 0;
+    border-radius: 2vh;
+
+    font-family: Raleway;
+    font-size: 2.2vh;
+    font-weight: bold;
+    
+    margin-top: 3%;
+    padding: 2.5vh 2.5vw;
+    
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.land_Button:hover {
+    color: #0073FF;
+    background-color: white;
+    
+    transition: ease;
+    transition-duration: 300ms;
+    transform: translate(0, -6px);
+}
+
+.header2 {
+    color: white;
+    font-family: Raleway;
+    font-size: 3.7em;
+    font-weight: bolder;
+}
+
+.header2.small {
+    font-size: 3.3em;
+}
+
+.highlight {
+    padding: 0 9px;
+    border-radius: 2px;
+    line-height: 145%;
+}
+
+.highlight59A5D8 {
+    background-color: #59A5D8;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #59A5D8 50%) right;
+    background-size: 200%;
+}
+
+.highlight386FA4 {
+    background-color: #386FA4;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #386FA4 50%) right;
+    background-size: 200%;
+}
+
+.highlight59A5D8.in-view, .highlight386FA4.in-view {
+    transition: .5s ease-out;
+    background-position: left;
+}
+
+#highlight1 {
+    transition-delay: 340ms;
+}
+
+
+.video {
+    background-color: grey;
+    height: 50vh;
+    width: 45vw;
+    margin-left: 7.5vw;
+}
+
+.image {
+    background-color: grey;
+    height: 40vh;
+    width: auto;
+}
+
+.image.right {
+    margin-left: 7.5vw;
+}
+
+.image.left {
+    margin-right: 7.5vw;
+}
+
+.section {
+    color: white;
+    background-color: #133C55;
+    padding: 75px;
+    font-family: Raleway, sans-serif;
+
+    height: 70vh;
+
+    overflow: hidden;
+    text-wrap: pretty;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 9vw;
+}
+
+p{
+    font-family: Raleway;
+    font-size: 22px;
+    text-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -68,151 +289,4 @@ body {
 
 ::-webkit-scrollbar-corner { 
     background: #221b35;
-}
-
-.landingWrapper {
-    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover.png);
-    background-size: cover;
-    background-position: center; 
-    height: 100vh;
-    width: auto;
-    padding: 2% 3% 2%; 
-    background-repeat: no-repeat;
-    
-    animation: zoomInAnimation cubic-bezier(0,1.07,.64,.97) 600ms;
-    animation-iteration-count: 1;
-	
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    overflow: hidden;
-}
-
-.navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 15px;
-}
-
-.navText {
-    text-decoration: none;
-    color: white; 
-    font-size: 22px;
-    font-family: NeueMachina;
-    font-weight: 550;
-    cursor: pointer;
-    transition-duration: 200ms;
-}
-
-.navText:hover {
-    color: #0073FF;
-    transition: ease;
-    transition-duration: 200ms;
-}
-
-.navButton {
-    margin: 0px 2.8%;
-    user-select: none;
-}
-
-.text1 {
-    color: white;
-    font-family: Raleway;
-    font-size: 3.7em;
-    font-weight: bolder;
-}
-
-.highlight {
-    background-color: 59A5D8;
-    padding: 0 9px;
-    border-radius: 2px;
-    line-height: 145%;
-}
-
-.video {
-    background-color: grey;
-    height: 50vh;
-    width: 45vw;
-    margin-left: 7.5vw;
-}
-
-.header1 {
-    color: white;
-    font-size: 12vh;
-    font-family: NeueMachina;
-    padding: 0 30px;
-    margin: 0;
-    margin-top: 16vh;
-
-    line-height: 100%;
-    user-select: none;
-}
-
-.header4 {
-    color: white;
-    font-family: Raleway;
-    font-size: 3vh;
-    padding: 0 33px;
-    margin-top: 20px;
-
-    user-select: none;
-}
-
-.directButton {
-    font-family: Raleway;
-    font-weight: bold;
-    border: 0;
-    background-color: #0073FF;
-    font-size: 2.2vh;
-    color: white;
-    margin-top: 3%;
-    padding: 2.5vh 2.5vw;
-    cursor: pointer;
-    transition-duration: 300ms;
-    border-radius: 2vh;
-}
-
-.directButton:hover {
-    background-color: white;
-    color: #0073FF;
-    transition: ease;
-    transition-duration: 300ms;
-    transform: translate(0, -6px);
-}
-
-.logo {
-    margin: 5px; margin-right: 98px;
-    user-select: none;
-}
-
-.section {
-    color: white;
-    background-color: #133C55;
-    padding: 75px;
-    font-family: Raleway, sans-serif;
-
-    height: 80vh;
-
-    overflow: hidden;
-    text-wrap: pretty;
-
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: center;
-}
-
-#splineContainer {
-    position: absolute; 
-    top: 0; 
-    left: 30%; 
-    width: 70%; 
-    height: 100vh; 
-    overflow: hidden; 
-    padding: 2% 0 2%;
 }
