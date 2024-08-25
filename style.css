@@ -16,7 +16,7 @@ body {
 }
 
 
-.landingWrapper {
+.landing_wrapper {
     background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover.png);
     background-size: cover;
     background-position: center; 
@@ -211,9 +211,6 @@ p{
     font-size: 22px;
     text-wrap: wrap;
 }
-
-
-
 
 
 
