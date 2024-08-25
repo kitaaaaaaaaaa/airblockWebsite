@@ -156,7 +156,7 @@ body {
 }
 
 .highlight59A5D8.in-view, .highlight386FA4.in-view {
-    transition: .5s ease-out;
+    transition: .6s ease-in-out;
     background-position: left;
 }
 
@@ -204,6 +204,24 @@ body {
     justify-content: center;
 
     padding: 9vw;
+}
+
+.mode_container {
+    flex-direction: column;
+}
+
+.mode_images_container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mode_image {
+    background-color: grey;
+    width: 25vw;
+    height: auto;
+    max-height: 40vh; /* remove if neccessary */
+    margin: 2vw;
 }
 
 p{
