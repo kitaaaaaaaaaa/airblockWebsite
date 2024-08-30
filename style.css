@@ -18,13 +18,13 @@ body {
 
 .isnt_landing_wrapper {
     background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/QuickstartBG.jpg);
-	background-size: auto;
-	
+    background-size: cover;
+
     box-shadow: 0 -300px 75px -200px #5d9aea inset; /* Bottom Gradient */
 }
 
 .landing_wrapper {
-    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover.png);
+    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000, #00000000,#00000000,#00000000, #00000000, #132b36), url(assets/cover.png);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body {
     
     overflow: hidden;
     
-    box-shadow: 0 -300px 75px -200px #193b66 inset; /* Bottom Gradient */
+    /* box-shadow: 0 -300px 75px -200px #10181a inset; */
 }
 
 .logo {
@@ -184,6 +184,8 @@ u {
     background-color: grey;
     width: 45vw;
     margin-left: 7.5vw;
+
+    border-radius: 8px;
 }
 
 .image {
@@ -232,12 +234,15 @@ u {
     height: 30vh;
 }
 
+#indexEndWrapper_bg {
+    height: 66%;
+}
+
 #index_video {
-    background-image: url(assets/top.png);
     background-repeat: no-repeat;
     background-size: cover;
 
-    box-shadow: 0 300px 75px -220px #193b66 inset;
+    background-image: linear-gradient(180deg, #132b36, #00000000), url(assets/top.png);
 }
 
 #indexEndButton {
@@ -333,6 +338,8 @@ u {
     position: absolute;
 
     z-index: -9999;
+
+    filter: brightness(80%);
 }
 
 .mode_image {
