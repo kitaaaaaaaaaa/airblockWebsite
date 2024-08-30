@@ -9,7 +9,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     
-    background-color: black;
+    background-color: #133C55;
     width: 100vw;
     height: 100vh;
     max-width: 100%;
@@ -42,6 +42,14 @@ body {
     margin: 5px; 
     margin-right: 98px;
     user-select: none;
+}
+
+b {
+    font-weight: 800;
+}
+
+u {
+    color: black;
 }
 
 .nav_Bar {
@@ -206,6 +214,46 @@ body {
     padding: 9vw;
 }
 
+#indexEndWrapper {
+    flex-direction: column;
+
+    align-content: center;
+    text-align: center;
+
+    height: 40vh;
+}
+
+#indexEndButton {
+    font-size: 1em;
+    
+    margin-top: 30%;
+    padding: 2.8vh 2.5vw;
+}
+
+#index_easytobuild {
+    background-image: url(assets/cover.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.land_Button {
+    color: white;
+    background-color: #0073FF;
+    border: 0;
+    border-radius: 2vh;
+
+    font-family: Raleway;
+    font-size: 2.2vh;
+    font-weight: bold;
+    
+    margin-top: 3%;
+    padding: 2.5vh 2.5vw;
+    
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
 .mode_container {
     flex-direction: column;
 }
@@ -294,15 +342,56 @@ body {
 
 p{
     font-family: Raleway;
-    font-size: 22px;
+    font-size: 20px;
     text-wrap: wrap;
 }
 
+.footer {
+    background-color: white;
+    font-family: Raleway, sans-serif;
 
+    height: 20vh;
 
+    padding: 23px;
 
+    overflow: hidden;
+}
 
+#footer_center {
+    align-items: center;
+    overflow: hidden;
+    text-wrap: pretty;
+}
 
+.footer_section {
+    margin: 0 40px;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+#footer_copyright {
+    font-size: 0.9em;
+    margin-left: 4.6%;
+}
+
+#footer_start {
+    float: left;
+}
+
+#footer_sitemap {
+    float: right;
+    margin-left: 56%;
+    text-align: right;
+}
+
+.footer_header {
+    font-family: NeueMachina;
+    font-size: 1.3em;
+    font-weight: bolder;
+
+    margin-bottom: .4em;
+}
 
 
 
