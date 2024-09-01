@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>Makeblock Airblock</title>
     <link rel="icon" href="assets/favicon.png" sizes="16px 16px">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="nav_Bar_Wrapper">
@@ -32,7 +34,7 @@
     
     <div class="section">
         <div data-aos="fade-right">
-            <img src="assets/Drones.jpg"width="700" height="620" style="margin-right: 80px; class=" left" data-aos="fade-right">
+            <img src="assets/Drones.jpg"width="700" height="620" style="margin-right: 80px;" data-aos="fade-right">
         </div>
 
         <div data-aos="fade-left">
@@ -60,13 +62,13 @@
             </p>
         </div>
 <div data-aos="fade-left">
-            <img src="assets/hovercraft.jpg"width="700" height="420" style="margin-left: 80px; class=" right" data-aos="fade-left">
+            <img src="assets/hovercraft.jpg"width="700" height="420" style="margin-left: 80px;" data-aos="fade-left">
         </div>
     </div>
 
     <div class="section">
         <div data-aos="fade-right">
-            <img src="assets/Spinner.jpg" width="700" height="520" style="margin-right: 80px; class="left" data-aos="fade-right">
+            <img src="assets/Spinner.jpg" width="700" height="520" style="margin-right: 80px;" data-aos="fade-right">
         </div>
 
         <div data-aos="fade-left">
@@ -100,5 +102,16 @@ body {
   background-image: url('assets/background.png');
 }
 </style>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    AOS.init({
+        duration: 800,
+        delay: -50,
+        once: false,
+        mirror: false,
+    });
+</script>
 </body>
 </html>
