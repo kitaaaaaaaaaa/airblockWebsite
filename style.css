@@ -2,7 +2,6 @@ html {
     font-family: system-ui, Verdana, Geneva, sans-serif;
     scroll-behavior: smooth;
     scrollbar-gutter: stable;
-    overflow-x: hidden;
 }
 
 body {
@@ -20,13 +19,11 @@ body {
     background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/QuickstartBG.jpg);
     background-size: cover;
 
-    padding: 2.7% 2.99% 2%;
-
     box-shadow: 0 -300px 75px -200px #5d9aea inset; /* Bottom Gradient */
 }
 
 .landing_wrapper {
-    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000, #00000000,#00000000,#00000000, #00000000, #132b36), url(assets/cover.png);
+    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/cover.png);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -44,21 +41,13 @@ body {
     
     overflow: hidden;
     
-    /* box-shadow: 0 -300px 75px -200px #10181a inset; */
+    box-shadow: 0 -300px 75px -200px #133C55 inset; /* Bottom Gradient */
 }
 
 .logo {
     margin: 5px; 
     margin-right: 98px;
     user-select: none;
-}
-
-b {
-    font-weight: 800;
-}
-
-u {
-    color: black;
 }
 
 .nav_Bar {
@@ -68,10 +57,6 @@ u {
     align-items: center;
     flex-wrap: wrap;
     padding: 0 15px;
-}
-
-.nav_Bar_Wrapper {
-    padding: 2.30% 2.57% 2%;
 }
 
 .nav_Button {
@@ -179,19 +164,18 @@ u {
 .highlight59A5D8.in-view, .highlight386FA4.in-view {
     transition: .6s ease-in-out;
     background-position: left;
-    transition-delay: 110ms;
 }
 
 #highlight1 {
     transition-delay: 340ms;
 }
 
+
 .video {
     background-color: grey;
+    height: 50vh;
     width: 45vw;
     margin-left: 7.5vw;
-
-    border-radius: 8px;
 }
 
 .image {
@@ -208,16 +192,13 @@ u {
     margin-right: 7.5vw;
 }
 
-.image.round {
-    border-radius: 10px;
-}
-
 .section {
     color: white;
+    background-color: #133C55;
     padding: 75px;
     font-family: Raleway, sans-serif;
 
-    height: 60vh;
+    height: 70vh;
 
     overflow: hidden;
     text-wrap: pretty;
@@ -231,215 +212,38 @@ u {
     padding: 9vw;
 }
 
-#indexEndWrapper {
-    flex-direction: column;
-
-    align-content: center;
-    text-align: center;
-
-    height: 30vh;
-}
-
-#indexEndWrapper_bg {
-    height: 66%;
-}
-
-#index_video {
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-image: linear-gradient(180deg, #132b36, #00000000), url(assets/top.png);
-}
-
-#indexEndButton {
-    font-size: 1em;
-    
-    margin-top: 30%;
-    padding: 2.4vh 2.5vw;
-}
-
-#index_easytobuild {
-    background-image: url(assets/easytobuild.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-    text-align: center;
-}
-
-#index_easytobuild_wrapper {
-    z-index: 9999;
-}
-
-.land_Button {
-    color: white;
-    background-color: #0073FF;
-    border: 0;
-    border-radius: 2vh;
-
-    font-family: Raleway;
-    font-size: 2.2vh;
-    font-weight: bold;
-    
-    margin-top: 3%;
-    padding: 2.5vh 2.5vw;
-    
-    cursor: pointer;
-    transition-duration: 300ms;
-}
-
 .mode_container {
     flex-direction: column;
 }
 
-
-.mode_image_container {
+.mode_images_container {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
 }
 
-.mode_image_wrapper {
-    position: relative;
-    margin: 2vw;
-
-    width: 25vw;
-    height: auto;
-    max-height: 20vh;
-
-    align-content: center;
-
-    transition-duration: 400ms;
-}
-
-.mode_image_wrapper:hover {
-    .mode_image {
-        transform: scale(1.03);
-        filter: brightness(57%);
-
-        transition: all 400ms ease;
-    }
-}
-
-.mode_image_wrapper:hover {
-    .header3 {
-        transform: translate(0, -40px);
-        
-        transition: all 400ms cubic-bezier(.72,0,.26,.85);
-    }
-}
-
-.mode_image_wrapper:hover {
-    .mode_text {
-        opacity: 1;
-        transform: translate(0, -58px);
-
-        transition: all 400ms cubic-bezier(.72,0,.26,.85) 30ms;
-    }
-}
-
-.mode_bg {
-    width: 100%;
-    height: 96%;
-    position: absolute;
-
-    z-index: -9999;
-
-    filter: brightness(80%);
-}
-
 .mode_image {
     background-color: grey;
-
-    width: 100%;
-    height: 30vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    z-index: -1;
-    
-    border-radius: 20px;
-
-    transition-duration: 400ms;
-
-    filter: brightness(50%);
+    width: 25vw;
+    height: auto;
+    max-height: 40vh; /* remove if neccessary */
+    margin: 2vw;
 }
 
-.header3 {
-    color: white;
-    font-size: 3vh;
-    font-weight: 800;
-    
-    margin: 35px;
-    margin-top: 44%;
-    
-    z-index: 10;
-    
-    transition-duration: 400ms;
-}
-
-.mode_text {
-    padding: 0 35px;
-    text-wrap: pretty;
-
-
-    opacity: 0;
-    transition-duration: 400ms;
-}
-
-p {
+p{
     font-family: Raleway;
-    font-size: 2em;
+    font-size: 22px;
     text-wrap: wrap;
 }
 
-.footer {
-    background-color: white;
-    font-family: Raleway, sans-serif;
-
-    height: 13vh;
-
-    padding: 23px;
-
-    overflow: hidden;
+.step{
+    margin:20px;
 }
 
-#footer_center {
-    align-items: center;
-    overflow: hidden;
-    text-wrap: pretty;
-}
 
-.footer_section {
-    margin: 0 40px;
-    height: 100%;
-    align-items: center;
-    align-content: center;
-}
 
-#footer_copyright {
-    font-size: 0.9em;
-    margin-left: 4.6%;
-}
 
-#footer_start {
-    float: left;
-}
 
-#footer_sitemap {
-    float: right;
-    margin-left: 56%;
-    text-align: right;
-}
-
-.footer_header {
-    font-family: NeueMachina;
-    font-size: 1.3em;
-    font-weight: bolder;
-
-    margin-bottom: .4em;
-}
 
 
 
@@ -491,8 +295,8 @@ p {
 }
 
 ::-webkit-scrollbar { 
-    width: 0.4vw;
-    height: 0.81vh;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -508,26 +312,4 @@ p {
 
 ::-webkit-scrollbar-corner { 
     background: #221b35;
-}
-
-.GoneWrapper {
-    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/bg.png);
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    
-    height: 100vh;
-    width: auto;
-    padding: 2% 3% 2%; 
-    
-    animation: zoomInAnimation cubic-bezier(0,1.07,.64,.97) 600ms;
-    animation-iteration-count: 1;
-	
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-    overflow: hidden;
-    
-    box-shadow: 0 -300px 75px -200px #133C55 inset; /* Bottom Gradient */
 }
