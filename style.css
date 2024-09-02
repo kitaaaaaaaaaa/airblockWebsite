@@ -355,6 +355,10 @@ u {
     color: white;
 }
 
+.nostyle_footer {
+    color: black;
+}
+
 .mode_image {
     background-color: grey;
 
@@ -411,39 +415,32 @@ p {
     background-color: white;
     font-family: Raleway, sans-serif;
 
-    height: 13vh;
+    height: 16%;
 
     padding: 25px;
 
     overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#footer_center {
-    align-items: center;
-    overflow: hidden;
-    text-wrap: pretty;
-}
 
 .footer_section {
-    margin: 0 40px;
+    margin: 0 7%;
     height: 100%;
     align-items: center;
     align-content: center;
+    text-wrap: pretty;
+
 }
 
 #footer_copyright {
     font-size: 0.9em;
-    margin-left: 4.3%;
+    margin-left: 3%;
 }
 
-#footer_start {
-    float: left;
-}
-
-#footer_sitemap {
-    float: right;
-    text-align: right;
-}
 
 .footer_header {
     font-family: NeueMachina;
