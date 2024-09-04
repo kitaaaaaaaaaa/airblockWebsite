@@ -23,7 +23,7 @@ body {
 }
 
 .isnt_landing_wrapper {
-    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000), url(assets/QuickstartBG.jpg);
+    background-image: linear-gradient(180deg, #000000DD, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #6f2af2), url(assets/QuickstartBG.jpg);
     background-size: cover;
 
     padding: 2.7% 2.99% 2%;
