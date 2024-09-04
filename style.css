@@ -16,7 +16,7 @@ body {
 }
 
 .isnt_body {
-	background-image: URL('assets/QuickstartBGgradient.png');
+	background-image: URL('assets/QuackstartBG.png');
 	width: 100vw;
 	height: 100vh;
 	max-width: 100%;
@@ -28,7 +28,7 @@ body {
 
     padding: 2.7% 2.99% 2%;
 
-    box-shadow: 0 -300px 75px -200px #5d9aea inset; /* Bottom Gradient */
+    box-shadow: 0 -300px 75px -200px inset; /* Bottom Gradient */
 }
 
 .landing_wrapper {
