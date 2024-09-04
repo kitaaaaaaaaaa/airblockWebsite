@@ -10,10 +10,16 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     
-    background-color: #5d9aea;
     width: 100vw;
     height: 100vh;
     max-width: 100%;
+}
+
+.isnt_body {
+	background-image: URL('assets/QuickstartBGgradient.png');
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
 }
 
 .isnt_landing_wrapper {
