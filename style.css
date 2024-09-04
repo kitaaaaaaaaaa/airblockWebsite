@@ -16,14 +16,25 @@ body {
 }
 
 .isnt_index_video {
-	background-image: linear-gradient(180deg, #4e6fc2, #00000000, #00000000, #00000000);
+	background-image: linear-gradient(180deg, #4c88d9, #00000000, #00000000, #00000000);
 }
 
 .isnt_body {
-	background-image: URL('assets/QuackstartBG.png');
-	width: 100vw;
+	/* background-image: URL('assets/QuackstartBG.png'); */
+	  
+    width: 100vw;
 	height: 100vh;
 	max-width: 100%;
+}
+
+.quack_bg {
+    width: 100%;
+    height: 1220vh;
+    position: absolute;
+    left: 0;
+    top: 70%;
+
+    z-index: -9999;
 }
 
 .isnt_landing_wrapper {
@@ -32,7 +43,7 @@ body {
 
     padding: 2.7% 2.99% 2%;
 
-    box-shadow: 0 -300px 75px -200px #4e6fc2 inset; /* Bottom Gradient */
+    box-shadow: 0 -300px 75px -200px #4c88d9 inset; /* Bottom Gradient */
 }
 
 .landing_wrapper {
