@@ -568,3 +568,16 @@ p {
     
     box-shadow: 0 -300px 75px -200px #133C55 inset; /* Bottom Gradient */
 }
+
+#index_easytocode_wrapper {
+    z-index: 9999;
+}
+
+#coding_easytocode {
+    background-image: url(assets/codebg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    text-align: center;
+}
