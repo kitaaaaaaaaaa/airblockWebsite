@@ -7,6 +7,16 @@
     
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autoplay Video</title>
+        <style>
+            /* Optional styling for the video */
+            video {
+                width: 100%;
+                height: auto;
+            }
+        </style>
     </head>
     <body class="isnt_body" style="margin: 0; padding: 0; background-color: #306391;">
         <div class="isnt_landing_wrapper">
@@ -22,6 +32,17 @@
         </div>
     <div class="quack_bg">
     <div class="isnt_index_video">
+        <video id="myVideo" autoplay muted>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <script>
+            // Function to unmute the video after 5 seconds
+            setTimeout(function() {
+                var video = document.getElementById('myVideo');
+                video.muted = false; // Unmute the video
+            }, 0); // 5000 milliseconds = 5 seconds
+        </script>
         <iframe width="1000" height="650" src="https://www.youtube.com/embed/8IX_xVSV4wo?si=Ud30ZYVdAkBzybWC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin-left: 50px; border-radius: 30px; "></iframe>
     </div>
     <div style="margin-left: 2.5%; margin-right: 2.5%; padding-bottom: 8%;">
